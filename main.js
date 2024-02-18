@@ -195,7 +195,7 @@ function removeFavorite(favorites, message) {
 function checkFavorites(message, favoriteButton, clearButton) {
     if (storedFavorites.includes(message)) {
         favoriteButton.innerText = '❤️';
-        clearButton.innerText = '🗑️'
+        clearButton.innerText = '🤍'
     }
 }
 
@@ -218,7 +218,7 @@ function deleteFromFavoritesContainer(e) {
 
 function changeEmojiButtons(heart, clear) {
     heart.innerText = '❤️';
-    clear.innerText = '🗑️';
+    clear.innerText = '🤍';
 }
 
 function clearMessage() {
