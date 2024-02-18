@@ -1,51 +1,41 @@
-# Self Care Center
-## Overview
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
-
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-The spec for this project can be found [here](https://frontend.turing.edu/projects/module-1/self-care-center.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
-
-______________________________________________________  
-# README Template  
-Before turning this project in, erase this line and everything above it and fill in the info below.  
-______________________________________________________  
-
 # Self-Care Center 
 
 ### Abstract:
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+I built an app that allows users to view motivational messages in different ways. They can choose which type of message they would like to view, click a receive message, and view a randomly generated message. The user can favorite the messages they like, and view all the messages they have favorited. They can also remove favorites if they wwish. 
 
 ### Installation Instructions:
-[//]: <> (What steps does a person have to take to get your app cloned down and running?)
+- Visit https://github.com/BrandonDoza/self-care-center
+- Fork the repository.
+- Select either SSH or HTTPS from the Code drop down, and copy the link.
+- Navigate to the terminal on your computer.
+- Navigate to the directory you would like to store the application.
+- Type git clone "paste either the SSH or HTTPS link you copied here"
+- Type code . to open the application in your text editor and view the code.
+- Type open index.html in the terminal to view and interact with the application
+in your browser. 
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
 
 ### Context:
-[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+I had approximately 5 days to work on this project. I am 2 months into my coding journey at the Turing School of Software Design
 
 ### Contributors:
-[//]: <> (Who worked on this application? Link to their GitHubs.)
+This project was completed solely by me
 
 ### Learning Goals:
-[//]: <> (What were the learning goals of this project? What tech did you work with?)
+The learning goals of this project were:
+- Gain experience building an application that utilizes HTML, CSS and JavaScript
+- Write HTML and CSS to match a provided comp
+- Understand how to listen to and respond to user events
+- Individualize my programming skill set
 
 ### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+Wins:
+- I completed the minimum viable product relatively quickly. Approximately 
+4 hours. 
+- I am really starting to grasp the concepts executed in this project well.
+- Learning how to implement local storage, so user generated information is still present on a page reload. 
+Challenges:
+- My biggest challenge was getting the favorite button to work like I wanted it 
+to. I spent a good chunk of time trying different approaches. I'm not in love with the way I ended up doing it, but my other approaches just did not work the way I had envisioned. I will defintely revisit when I'm a little further along in my learning journey to refactor this portion and get it to do exactly what I want. 

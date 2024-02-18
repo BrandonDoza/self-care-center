@@ -57,14 +57,14 @@ var messageOutput = document.querySelector('#random-message');
 var messageTypeHeader = document.querySelector('#message-type');
 var dblClickMessage = document.querySelector('#dbl-click-message');
 
-var recieveMessageButton = document.querySelector('#message-button');
+var receiveMessageButton = document.querySelector('#message-button');
 var favoritesButton = document.querySelector('#favorites-button');
 var homeButton = document.querySelector('#home-button');
 
 //<><>Event Handlers<><>
 function makeNewMessage() {
     if (affrimationRadio.checked) {
-        recieveMessageButton.disabled = false;
+        receiveMessageButton.disabled = false;
         randomMessage = randomIndex(affirmations);
         outputSectionImage.classList.add('hidden');
         outputSection.innerHTML = `<h2 class="button-pointer-handler" id="favorite-button">🤍</h2>
@@ -86,7 +86,7 @@ function makeNewMessage() {
         outputSection.classList.add('output-message-size');
     } 
     if (mantraRadio.checked) {
-        recieveMessageButton.disabled = false;
+        receiveMessageButton.disabled = false;
         randomMessage = randomIndex(mantras);
         outputSectionImage.classList.add('hidden');
         outputSection.innerHTML = `<h2 class="button-pointer-handler" id="favorite-button">🤍</h2>
@@ -108,8 +108,8 @@ function makeNewMessage() {
         outputSection.classList.add('output-message-size');
     } 
     if (!mantraRadio.checked && !affrimationRadio.checked) {
-        recieveMessageButton.disabled = true;
-        recieveMessageButton.classList.add('error-pointer-handling')
+        receiveMessageButton.disabled = true;
+        receiveMessageButton.classList.add('error-pointer-handling')
         messageTypeHeader.innerText = '✨PLEASE CHOOSE AN OPTION✨';
         messageTypeHeader.classList.add('error-handling');
     }
@@ -118,9 +118,9 @@ function makeNewMessage() {
 function showFavoritesButton() {
     if (storedFavorites.length >= 1) {
         favoritesButton.classList.remove('hidden');
-        favoritesButton.classList.add('recieve-message');
+        favoritesButton.classList.add('receive-message');
     } else if (storedFavorites.length === 0) {
-        favoritesButton.classList.remove('recieve-message')
+        favoritesButton.classList.remove('receive-message')
         favoritesButton.classList.add('hidden');
     }
 }
@@ -134,7 +134,7 @@ function viewFavoritesPage() {
     favoriteSection.classList.remove('hidden');
     favoriteSection.classList.add('favorites-output-container');  
     homeButton.classList.remove('hidden');
-    homeButton.classList.add('recieve-message');
+    homeButton.classList.add('receive-message');
     dblClickMessage.classList.remove('hidden');
     dblClickMessage.classList.add('sub-heading');
     retrieveFavorites(storedFavorites);  
@@ -155,14 +155,14 @@ function viewHome() {
 
 function radioReset() {
     if (affrimationRadio.checked) {
-        recieveMessageButton.disabled = false;
-        recieveMessageButton.classList.remove('error-pointer-handling');
+        receiveMessageButton.disabled = false;
+        receiveMessageButton.classList.remove('error-pointer-handling');
         messageTypeHeader.classList.remove('error-handling');
         messageTypeHeader.innerText = 'Which type of message?';
     }
     if (mantraRadio.checked) {
-        recieveMessageButton.disabled = false;
-        recieveMessageButton.classList.remove('error-pointer-handling');
+        receiveMessageButton.disabled = false;
+        receiveMessageButton.classList.remove('error-pointer-handling');
         messageTypeHeader.classList.remove('error-handling');
         messageTypeHeader.innerText = 'Which type of message?';
     }
@@ -226,7 +226,7 @@ function clearMessage() {
 }
 
 //<><>Event Listeners<><>
-recieveMessageButton.addEventListener('click', makeNewMessage);
+receiveMessageButton.addEventListener('click', makeNewMessage);
 affrimationRadio.addEventListener('click', radioReset);
 mantraRadio.addEventListener('click', radioReset);
 favoritesButton.addEventListener('click', viewFavoritesPage);
