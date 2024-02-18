@@ -15,7 +15,8 @@ I built an app that allows users to view motivational messages in different ways
 in your browser. 
 
 ### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+
+![Screenshot 2024-02-18 at 10 36 40 AM](https://github.com/BrandonDoza/self-care-center/assets/141676838/0ece6520-d2b7-4d4b-9f98-0daf2876e147)
 
 ### Context:
 I had approximately 5 days to work on this project. I am 2 months into my coding journey at the Turing School of Software Design
